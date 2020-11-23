@@ -104,6 +104,9 @@ export default function Navbar() {
             <li className="mr-3">
               <a className="inline-block no-underline focus:text-white hover:text-underline py-2 px-4" href="#beneficios">Beneficios</a>
             </li>
+            <li className="mr-3">
+              <a className="inline-block no-underline focus:text-white hover:text-underline py-2 px-4" href="#contacto">Contacto</a>
+            </li>
           </ul>
         </div>
       </nav>
