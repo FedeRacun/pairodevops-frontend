@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 const Team = () => {
 
@@ -30,8 +30,8 @@ const Team = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datos)
     };
-    fetch('https://pairodevops-backend.herokuapp.com/send-email', requestOptions)
-    //fetch('http://localhost:3600/send-email', requestOptions)
+    // fetch('https://pairodevops-backend.herokuapp.com/send-email', requestOptions)
+    fetch('http://localhost:3600/send-email', requestOptions)
         .then(response => response.json())
         .then(() => {
           setDatos({
@@ -49,6 +49,13 @@ const Team = () => {
         })
         .catch( err => {
           console.error('Error al enviar formulario: ', err)
+          Swal.fire({
+            title: 'Error!',
+            text: 'Lo sentimos, ocurrio un error al enviar el mensaje, prueba comunicarte por alguna de nuestras redes sociales',
+            showConfirmButton: false,
+            type: 'error',
+            timer: 1600
+          });
         });
   }
 
@@ -77,7 +84,7 @@ const Team = () => {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Puedes dejarnos tu consulta aquí o buscarnos por nuestras redes sociales.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form className="flex flex-wrap -m-2" onSubmit={enviarDatos}>
+          <form className="flex flex-wrap -m-2" onSubmit={enviarDatos} id="contact-form">
             <div className="w-full md:w-1/2 p-2">
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-white">Nombre</label>
