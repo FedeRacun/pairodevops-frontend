@@ -9,6 +9,8 @@ export default function Navbar() {
     const mobileMenu = document.getElementById('nav-content');
     const BtnMenu = document.getElementById('nav-toggle');
     const isHidden = mobileMenu?.classList.contains('hidden');
+    const pairoColor = document.getElementById('pairoColor');
+    const pairoWhite = document.getElementById('pairoWhite');
 
     if (!isHidden) {
       mobileMenu?.classList.add('hidden');
@@ -20,26 +22,34 @@ export default function Navbar() {
       internalNav?.classList.remove('gradient');
       internalNav?.classList.remove('text-white')
       BtnMenu?.classList.remove('border-white')
-      BtnMenu?.classList.add('border-gray-600')
+      pairoColor?.classList.remove('hidden')
+      pairoWhite?.classList.remove('show')
 
       // ADD
+      BtnMenu?.classList.add('border-gray-600')
       navBar?.classList.add('bg-white')
       internalNav?.classList.add('bg-white')
       internalNav?.classList.add('text-gray-600')
       internalNav?.classList.add('border-b')
       internalNav?.classList.add('border-gray-200')
+      pairoColor?.classList.add('show')
+      pairoWhite?.classList.add('hidden')
     } else {
       // REMOVE
       internalNav?.classList.remove('text-gray-600')
       internalNav?.classList.remove('border-b')
       internalNav?.classList.remove('border-gray-200')
       BtnMenu?.classList.remove('border-gray-600')
+      pairoColor?.classList.remove('show');
+      pairoWhite?.classList.remove('hidden')
 
       // ADD
       navBar?.classList.add('gradient')
       internalNav?.classList.add('gradient')
       internalNav?.classList.add('text-white')
       BtnMenu?.classList.add('border-white')
+      pairoWhite?.classList.add('show')
+      pairoColor?.classList.add('hidden')
 
     }
   })
@@ -60,7 +70,11 @@ export default function Navbar() {
         {/* Title */}
         <div className="flex items-center flex-shrink-0 ">
           <a className=" no-underline hover: hover:no-underline" href="#home">
-            <span className="text-2xl pl-2"><i className="em em-grinning" /> PairoDevops</span>
+
+            <img id="pairoWhite" className="object-fill h-20 w-54 pl-2 show" src="/images/pairoLogoBlanco.png"  alt="pairoDevops"/>
+            <img id="pairoColor" className="object-fill h-20 w-54 pl-2 hidden" src="/images/pairoLogoColor.png"  alt="pairoDevops"/>
+
+            {/* <span className="text-2xl pl-2"><i className="em em-grinning" /> PairoDevops</span> */}
           </a>
         </div>
         {/* END Title */}

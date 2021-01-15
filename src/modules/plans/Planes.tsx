@@ -21,7 +21,7 @@ export default function Price() {
             <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
               <h2 className="text-sm tracking-widest title-font mb-1 font-medium">Bronce</h2>
               <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                <span>$1000</span>
+                <span>$1300</span>
                 <span className="text-lg ml-1 font-normal text-gray-500">x hs</span>
               </h1>
               <p className="flex items-start text-gray-600 mb-2">
