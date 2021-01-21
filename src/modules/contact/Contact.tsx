@@ -59,7 +59,6 @@ const Team = () => {
         });
   }
 
-
   return (
     <section className="text-white body-font relative gradient" id="contacto">
       <svg className="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
