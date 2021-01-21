@@ -30,8 +30,8 @@ const Team = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datos)
     };
-    // fetch('https://pairodevops-backend.herokuapp.com/send-email', requestOptions)
-    fetch('http://localhost:3600/send-email', requestOptions)
+    fetch('https://pairodevops-backend.herokuapp.com/send-email', requestOptions)
+    // fetch('http://localhost:3600/send-email', requestOptions)
         .then(response => response.json())
         .then(() => {
           setDatos({
