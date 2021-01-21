@@ -80,7 +80,7 @@ export default function Navbar() {
         {/* END Title */}
 
         {/* Contacto */}
-        <div className="inline-flex md:ml-60 pt-3">
+        <div className="inline-flex md:ml-64 md:mr-4 pt-3">
         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=info@pairodevops.com">
             <svg version="1.1" width={25} height={25} className="fill-current" id="gmail" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 92.12" xmlSpace="preserve">
               <path className="st4" d="M8.36,92.12h19.54V44.67L0,23.76v60.08C0,88.42,3.78,92.12,8.36,92.12L8.36,92.12z" />
