@@ -29,14 +29,14 @@ export default function Navbar() {
       BtnMenu?.classList.add('border-gray-600')
       navBar?.classList.add('bg-white')
       internalNav?.classList.add('bg-white')
-      internalNav?.classList.add('text-gray-600')
+      internalNav?.classList.add('text-gray-800')
       internalNav?.classList.add('border-b')
       internalNav?.classList.add('border-gray-200')
       pairoColor?.classList.add('show')
       pairoWhite?.classList.add('hidden')
     } else {
       // REMOVE
-      internalNav?.classList.remove('text-gray-600')
+      internalNav?.classList.remove('text-gray-800')
       internalNav?.classList.remove('border-b')
       internalNav?.classList.remove('border-gray-200')
       BtnMenu?.classList.remove('border-gray-600')
@@ -66,7 +66,7 @@ export default function Navbar() {
 
   return (
     <header className="text-white body-font fixed w-full z-50 gradient" id="navbar">
-      <nav className="flex items-center justify-between flex-wrap gradient py-6 px-2 fixed w-full z-10 top-0" id="internalNav">
+      <nav className="flex items-center justify-between flex-wrap gradient py-2 px-2 fixed w-full z-10 top-0" id="internalNav">
         {/* Title */}
         <div className="flex items-center flex-shrink-0 ">
           <a className=" no-underline hover: hover:no-underline" href="#home">
@@ -80,7 +80,7 @@ export default function Navbar() {
         {/* END Title */}
 
         {/* Contacto */}
-        <div className="inline-flex md:ml-40">
+        <div className="inline-flex md:ml-60 pt-3">
         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=info@pairodevops.com">
             <svg version="1.1" width={25} height={25} className="fill-current" id="gmail" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 92.12" xmlSpace="preserve">
               <path className="st4" d="M8.36,92.12h19.54V44.67L0,23.76v60.08C0,88.42,3.78,92.12,8.36,92.12L8.36,92.12z" />
@@ -107,7 +107,7 @@ export default function Navbar() {
         </div>
         {/* END Button */}
 
-        <div className="w-full lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+        <div className="w-full lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-3" id="nav-content">
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
               <a className="inline-block no-underline focus:text-white hover:text-underline py-2 px-4" href="#services">Servicios</a>
