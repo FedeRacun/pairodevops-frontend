@@ -71,8 +71,8 @@ export default function Navbar() {
         <div className="flex items-center flex-shrink-0 ">
           <a className=" no-underline hover: hover:no-underline" href="#home">
 
-            <img id="pairoWhite" className="object-fill h-20 w-54 pl-2 show" src="/images/pairoLogoBlanco.png"  alt="pairoDevops"/>
-            <img id="pairoColor" className="object-fill h-20 w-54 pl-2 hidden" src="/images/pairoLogoColor.png"  alt="pairoDevops"/>
+            <img id="pairoWhite" className="object-fill h-20 w-54 pl-2 show" src="/images/pairoLogoBlanco.png" alt="pairoDevops Logo" width={187} height={80}/>
+            <img id="pairoColor" className="object-fill h-20 w-54 pl-2 hidden" src="/images/pairoLogoColor.png" alt="pairoDevops Logo Color" width={187} height={80}/>
 
             {/* <span className="text-2xl pl-2"><i className="em em-grinning" /> PairoDevops</span> */}
           </a>
